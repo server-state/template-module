@@ -1,0 +1,28 @@
+{
+  "name": "template-module",
+  "version": "1.0.0",
+  "description": "Default template for server-base modules",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ./src",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/server-state/template-module.git"
+  },
+  "author": "server-state",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/server-state/template-module/issues"
+  },
+  "homepage": "https://github.com/server-state/template-module#readme",
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "jest": "^24.9.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  }
+}
