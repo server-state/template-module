@@ -61,4 +61,4 @@ typings/
 .next
 
 # compiled version
-index.js
+/index.js
