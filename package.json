@@ -1,11 +1,11 @@
 {
   "name": "template-module",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Default template for server-base modules",
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "eslint ./src ./tests",
     "build": "webpack --config webpack.config.js --mode production"
   },
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/server-state/template-module#readme",
   "devDependencies": {
+    "coveralls": "^3.0.6",
     "eslint": "^6.3.0",
     "jest": "^24.9.0",
     "webpack": "^4.39.3",

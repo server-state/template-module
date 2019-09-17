@@ -3,9 +3,11 @@ node_js:
   - 10
 
 script:
+  - npm install -g coveralls
   - npm run lint
   - npm run build
   - npm test
+  - cat ./coverage/lcov.info | coveralls
 
 notifications:
   slack: serverstate:PcPgLd43m8TKiXrxfHb1mKff
