@@ -23,7 +23,7 @@
     "coveralls": "^3.0.9",
     "eslint": "^6.7.1",
     "jest": "^24.9.0",
-    "webpack": "^4.39.3",
+    "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }
 }
