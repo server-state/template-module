@@ -1,13 +1,13 @@
 # template-module
 Default template for server-base modules
 
-This output generates a straight base to provide other applications useful information like server-state example [Web Client](https://github.com/server-state/web-client).
+This output generates a straight base to provide other applications useful information like Server State example [Web Client](https://github.com/server-state/web-client).
 
 ### Checklist for using this template
 - [ ] Change name and description in this README
 - [ ] Change the package name in the `package.json`
 - [ ] Change the repository, issue and other urls as well as the `author` field in the `package.json`, as needed
-- [ ] Familiarize yourself with the specifications for modules, which can be found in https://github.com/server-state/specs.
+- [ ] Familiarize yourself with the specifications for modules, which can be found in https://specs.server-state.tech/.
 
 **Afterwards**
 - [ ] Write source code for your module in the `src` module
