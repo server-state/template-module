@@ -1,7 +1,7 @@
 # template-module
 Default template for server-base modules
 
-This output generates a straight base to provide other applications useful information like server-state example [client-base](https://github.com/server-state/client-base).
+This output generates a straight base to provide other applications useful information like server-state example [Web Client](https://github.com/server-state/web-client).
 
 ### Checklist for using this template
 - [ ] Change name and description in this README
@@ -38,4 +38,4 @@ This output generates a straight base to provide other applications useful infor
 
 ---
 
-This official module belongs to the organization [server-state](https://github.com/server-state).
+This official module belongs to the organization [Server State](https://github.com/server-state).
