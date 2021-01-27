@@ -1,33 +1,22 @@
 module.exports = {
-	'env': {
-		'commonjs': true,
-		'es6': true,
-		'node': true
+	env: {
+		commonjs: true,
+		es6: true,
+		node: true
 	},
-	'extends': 'eslint:recommended',
-	'globals': {
-		'Atomics': 'readonly',
-		'SharedArrayBuffer': 'readonly'
+	plugins: ['prettier'],
+	extends: ['eslint:recommended', 'prettier', 'plugin:prettier/recommended'],
+	globals: {
+		Atomics: 'readonly',
+		SharedArrayBuffer: 'readonly'
 	},
-	'parserOptions': {
-		'ecmaVersion': 2018
+	parserOptions: {
+		ecmaVersion: 2018
 	},
-	'rules': {
-		'indent': [
-			'error',
-			4
-		],
-		'linebreak-style': [
-			'error',
-			'unix'
-		],
-		'quotes': [
-			'error',
-			'single'
-		],
-		'semi': [
-			'error',
-			'always'
-		]
-	}
+	rules: {
+		// treat wrong format as warning instead of error
+		// to inform the user and not slap him
+		'prettier/prettier': 'warn'
+	},
+	ignorePatterns: ['.eslintrc.js', '.prettierrc.js', 'rollup.config.js']
 };
