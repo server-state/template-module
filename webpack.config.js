@@ -1,3 +1,5 @@
+const nodeExternals = require('webpack-node-externals');
+
 module.exports = {
 	output: {
 		path: __dirname,
@@ -7,5 +9,5 @@ module.exports = {
 	resolve: {
 		fallback: {}
 	},
-	externals: {}
+	externals: [nodeExternals()]
 };
