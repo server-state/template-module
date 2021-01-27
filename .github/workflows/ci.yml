@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [ '10', '12', '14' ]
+        node: ['10', '12', '14']
     name: Build on Node v${{ matrix.node }}
     env:
       CI: true
