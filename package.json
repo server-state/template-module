@@ -21,13 +21,20 @@
 		"url": "https://github.com/server-state/template-module/issues"
 	},
 	"homepage": "https://github.com/server-state/template-module#readme",
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
+	},
 	"devDependencies": {
 		"coveralls": "^3.1.0",
 		"eslint": "^7.18.0",
 		"eslint-config-prettier": "^7.2.0",
 		"eslint-plugin-prettier": "^3.3.1",
+		"husky": "^4.3.8",
 		"jest": "^26.6.3",
 		"prettier": "^2.2.1",
+		"pretty-quick": "^3.1.0",
 		"webpack": "^5.18.0",
 		"webpack-cli": "^4.4.0"
 	}
