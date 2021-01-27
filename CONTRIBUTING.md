@@ -6,7 +6,7 @@ Contributions to this project are always welcome. To keep things consistent, ple
 
 We generally only accept contributions with well-documented code. This includes comments in the code, external files explaining certain aspects if necessary and so on.
 
-If you aren't good in English, that isn't a problem. We'll be more than happy to provide any assistance necessary in a PR, as long as we understand what it's about. We will, however, not document your code for you, so please understand that we won't accept PRs where no effort was put into documenting the code.
+If you aren't good at English, that isn't a problem. We'll be more than happy to provide any assistance necessary in a PR, as long as we understand what it's about. We will, however, not document your code for you, so please understand that we won't accept PRs where no effort was put into documenting the code.
 
 ### Automated testing
 
@@ -27,7 +27,7 @@ on production servers. As every new third-party-dependency adds potential vulner
 If an issue exists for the task, please assign yourself in it and clearly state when you begin and stop working on it to let everyone
 know what's being worked on/ what's not assigned yet.
 
-Contributions may exist as PRs to the `develop` branch (and for hotfixes only to the `master` branch) only. They have to get reviewed and merged by members of the GitHub organization.
+Contributions may exist as PRs to the `develop` branch (and for hotfixes only to the `main` branch) only. They have to get reviewed and merged by members of the GitHub organization.
 
 #### As a member/maintainer of the core team
 
@@ -53,23 +53,23 @@ This should get used for high-priority fixes only.
 
 #### Feature releases
 
-Feature releases are merges from `develop` into `master`. As soon as this gets merged, the process decribed below has to get implemented.
+Feature releases are merges from `develop` into `main`. As soon as this gets merged, the process decribed below has to get implemented.
 
 All compatibility changes must be clearly documented in the release notes.
 
 #### Process for releasing a new version
 
-1. Merging the releavant branch (`hotfix-*` or `develop`)
-2. Commit and push to `master` a commit bumping the version number (`package.json`) with PATCH for hotfixes and MINOR for feature releases.
+1. Merging the relevant branch (`hotfix-*` or `develop`)
+2. Commit and push to `main` a commit bumping the version number (`package.json`) with PATCH for hotfixes and MINOR for feature releases.
    The commit message should be `Increased package version to vX.X.X`
 3. Run CI tests for the commit
 4. If all tests and requirements pass, continue with step (8)
 5. Revert the commit
-6. Inform about failed release in the PR for the release, e.g., `develop->master`
+6. Inform about failed release in the PR for the release, e.g., `develop->main`
 7. Go to step (10)
 8. Create a tag with the format `vX.X.X` for the commit and create a GitHub release including release notes
 9. Publish new package version to npm (if applicable)
-10. Merge `master` into `develop`
+10. Merge `main` into `develop`
 
 ### References
 
