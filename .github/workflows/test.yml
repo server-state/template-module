@@ -23,8 +23,6 @@ jobs:
       - name: Install development dependencies 📚
         run: npm ci
 
-      - name: Build all packages 🛠️
-        run: npm run build
       - name: Run unit tests and generate coverage 🛃
         run: npm run test
 
