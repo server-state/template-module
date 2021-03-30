@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"private": true,
 	"scripts": {
+		"prepare": "husky install",
 		"build": "webpack --config webpack.config.js --mode production",
 		"test": "jest --coverage",
 		"lint": "eslint --ignore-pattern node_modules/ --no-error-on-unmatched-pattern ./src ./tests",
@@ -22,11 +23,6 @@
 		"url": "https://github.com/server-state/template-module/issues"
 	},
 	"homepage": "https://github.com/server-state/template-module#readme",
-	"husky": {
-		"hooks": {
-			"pre-commit": "pretty-quick --staged"
-		}
-	},
 	"devDependencies": {
 		"@types/jest": "^26.0.22",
 		"@types/node": "^14.14.37",
@@ -35,7 +31,7 @@
 		"eslint": "^7.23.0",
 		"eslint-config-prettier": "^8.1.0",
 		"eslint-plugin-prettier": "^3.3.1",
-		"husky": "^4.3.8",
+		"husky": "^6.0.0",
 		"jest": "^26.6.3",
 		"prettier": "^2.2.1",
 		"pretty-quick": "^3.1.0",
