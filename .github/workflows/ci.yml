@@ -62,7 +62,7 @@ jobs:
         run: npm run build
 
       - name: Upload build artifact 📤
-        uses: actions/upload-artifact@v2.2.3
+        uses: actions/upload-artifact@v2.2.4
         with:
           name: build-${{ github.run_number }}
           path: index.js
