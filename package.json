@@ -5,13 +5,14 @@
 	"main": "index.js",
 	"private": true,
 	"scripts": {
-		"prepare": "husky install",
+		"prepare": "npm run meta:register-precommit",
 		"build": "webpack --config webpack.config.js --mode production",
 		"test": "jest --coverage",
 		"lint": "eslint --ignore-pattern node_modules/ --no-error-on-unmatched-pattern ./src ./tests",
 		"style": "prettier --write package.json '**/*{.ts,.tsx,.js,.jsx,.json,.html,.css,.scss,.sass,.yaml,.yml,.md}'",
 		"style:ci": "prettier --list-different package.json '**/*{.ts,.tsx,.js,.jsx,.json,.html,.css,.scss,.sass,.yaml,.yml,.md}'",
-		"clean": "rimraf index.js coverage"
+		"clean": "rimraf index.js coverage",
+		"meta:register-precommit": "node scripts/register-precommit-hook.js"
 	},
 	"repository": {
 		"type": "git",
