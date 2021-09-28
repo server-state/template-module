@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://github.com/server-state/template-module#readme",
 	"devDependencies": {
-		"@types/jest": "^27.0.1",
+		"@types/jest": "^27.0.2",
 		"@types/node": "^16.10.1",
 		"@types/webpack": "^5.28.0",
 		"coveralls": "^3.1.1",
