@@ -24,6 +24,7 @@ jobs:
         run: npm run style:ci
       - name: Run Linter 📑
         run: npm run lint
+
   build:
     runs-on: ubuntu-latest
     strategy:
@@ -54,3 +55,25 @@ jobs:
           name: build-${{ github.run_number }}
           path: index.js
           retention-days: 7
+  test:
+    name: Test module
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 📥
+        uses: actions/checkout@v2.3.4
+      - name: Setup Node 💿
+        uses: actions/setup-node@v2.4.1
+        with:
+          node-version: 14
+          cache: 'npm'
+
+      - name: Install development dependencies 📚
+        run: npm ci
+      - name: Run unit tests and generate coverage 🛃
+        run: npm run test
+
+      - name: Upload coverage report to Coveralls
+        if: ${{ github.actor != 'dependabot[bot]' }}
+        uses: coverallsapp/github-action@1.1.3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
