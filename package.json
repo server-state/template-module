@@ -33,7 +33,7 @@
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-prettier": "^4.0.0",
 		"jest": "^27.3.1",
-		"prettier": "2.4.1",
+		"prettier": "2.5.0",
 		"pretty-quick": "^3.1.2",
 		"rimraf": "^3.0.2",
 		"webpack": "^5.64.2",
