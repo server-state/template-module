@@ -11,7 +11,7 @@ jobs:
       CI: true
     steps:
       - name: Checkout 📥
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v3.0.2
       - name: Setup Node 💿
         uses: actions/setup-node@v3.1.0
         with:
@@ -35,7 +35,7 @@ jobs:
       CI: true
     steps:
       - name: Checkout 📥
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v3.0.2
       - name: Setup Node 💿
         uses: actions/setup-node@v3.1.0
         with:
@@ -60,7 +60,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 📥
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v3.0.2
       - name: Setup Node 💿
         uses: actions/setup-node@v3.1.0
         with:
